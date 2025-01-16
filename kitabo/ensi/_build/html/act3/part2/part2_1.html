@@ -1,0 +1,719 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Base &#8212; Snails Pace</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+
+  
+  <link href="../../_static/vendor/fontawesome/6.5.2/css/all.min.css?digest=dfe6caa3a7d634c4db9b" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.2/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/styles/sphinx-book-theme.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-design.5ea377869091fd0449014c60fc090103.min.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-dropdown.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/panels-bootstrap.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b" />
+  <script src="../../_static/vendor/fontawesome/6.5.2/js/all.min.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/sphinx_highlight.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"; const thebe_selector = ".thebe,.cell"; const thebe_selector_input = "pre"; const thebe_selector_output = ".output, .cell_output"</script>
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'act3/part2/part2_1';</script>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Risk" href="part2_2.html" />
+    <link rel="prev" title="Archetypal" href="../act2.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <div id="pst-skip-link" class="skip-link d-print-none"><a href="#main-content">Skip to main content</a></div>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>Back to top</button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-primary-sidebar-checkbox"/>
+  <label class="overlay overlay-primary" for="pst-primary-sidebar-checkbox"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          id="pst-secondary-sidebar-checkbox"/>
+  <label class="overlay overlay-secondary" for="pst-secondary-sidebar-checkbox"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <div class="pst-async-banner-revealer d-none">
+  <aside id="bd-header-version-warning" class="d-none d-print-none" aria-label="Version warning"></aside>
+</div>
+
+  
+    <header class="bd-header navbar navbar-expand-lg bd-navbar d-print-none">
+    </header>
+  
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+    
+  
+
+<a class="navbar-brand logo" href="../../index.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="https://www.bleeding.org/sites/default/files/image/CT%20Kit_Phases%20of%20Clinical%20Trials.png" class="logo__image only-light" alt="Snails Pace - Home"/>
+    <script>document.write(`<img src="https://www.bleeding.org/sites/default/files/image/CT%20Kit_Phases%20of%20Clinical%20Trials.png" class="logo__image only-dark" alt="Snails Pace - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item">
+
+ <script>
+ document.write(`
+   <button class="btn search-button-field search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass"></i>
+    <span class="search-button__default-text">Search</span>
+    <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd class="kbd-shortcut__modifier">K</kbd></span>
+   </button>
+ `);
+ </script></div>
+        <div class="sidebar-primary-item"><nav class="bd-links bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="../../index.html">
+                    Tactical
+                </a>
+            </li>
+        </ul>
+        <ul class="current nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../act1/part1.html">Informational</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../act1/chapter1.html">Referral</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../act1/chapter2.html">Screening</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../act1/chapter3.html">Eligibility</a></li>
+</ul>
+</details></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../act2/part2.html">Strategic</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../act2/chapter1.html">Principal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../act2/chapter2.html">Agent</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../act2/chapter3.html">Risk</a></li>
+
+</ul>
+</details></li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="../part3.html">Operational</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l2 has-children"><a class="reference internal" href="../act1.html">Literature 🌊</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../part1/part1_1.html">Cosmic</a></li>
+
+<li class="toctree-l3"><a class="reference internal" href="../part1/part1_2.html">Uncertainty</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../part1/part1_3.html">Failure</a></li>
+
+</ul>
+</details></li>
+<li class="toctree-l2 current active has-children"><a class="reference internal" href="../act2.html">Personalize ⚓️</a><details open="open"><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul class="current">
+<li class="toctree-l3 current active"><a class="current reference internal" href="#">Base</a></li>
+
+<li class="toctree-l3"><a class="reference internal" href="part2_2.html">Risk</a></li>
+
+<li class="toctree-l3"><a class="reference internal" href="part2_3.html">Student ☔️</a></li>
+</ul>
+</details></li>
+<li class="toctree-l2 has-children"><a class="reference internal" href="../act3.html">Update 🧭</a><details><summary><span class="toctree-toggle" role="presentation"><i class="fa-solid fa-chevron-down"></i></span></summary><ul>
+<li class="toctree-l3"><a class="reference internal" href="../part3/part3_1.html">Notification</a></li>
+<li class="toctree-l3"><a class="reference internal" href="../part3/part3_2.html">Transformation</a></li>
+
+<li class="toctree-l3"><a class="reference internal" href="../part3/part3_3.html">Feedback</a></li>
+</ul>
+</details></li>
+</ul>
+</details></li>
+<li class="toctree-l1"><a class="reference internal" href="../../bibliography.html">Existential</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main" role="main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article d-print-none">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><button class="sidebar-toggle primary-toggle btn btn-sm" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</button></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-launch-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Launch interactive content">
+    <i class="fas fa-rocket"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://mybinder.org/v2/gh/abikesa/template/main?urlpath=tree/book/website/act3/part2/part2_1.ipynb" target="_blank"
+   class="btn btn-sm dropdown-item"
+   title="Launch on Binder"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  
+    <img alt="Binder logo" src="../../_static/images/logo_binder.svg">
+  </span>
+<span class="btn__text-container">Binder</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../_sources/act3/part2/part2_1.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm nav-link pst-navbar-icon theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="theme-switch fa-solid fa-sun fa-lg" data-mode="light"></i>
+    <i class="theme-switch fa-solid fa-moon fa-lg" data-mode="dark"></i>
+    <i class="theme-switch fa-solid fa-circle-half-stroke fa-lg" data-mode="auto"></i>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm pst-navbar-icon search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<button class="sidebar-toggle secondary-toggle btn btn-sm" title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</button>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Base</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Base</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-elegance-of-science-and-art-periodic-table-and-equal-temperament">The Elegance of Science and Art: Periodic Table and Equal Temperament</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-periodic-table-dmitri-mendeleevs-vision"><strong>The Periodic Table: Dmitri Mendeleev’s Vision</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#equal-temperament-the-harmony-of-sacrifice"><strong>Equal Temperament: The Harmony of Sacrifice</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#other-cultures-and-microtonality"><strong>Other Cultures and Microtonality</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#a-shared-paradigm-periodicity-and-temperament"><strong>A Shared Paradigm: Periodicity and Temperament</strong></a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id1"></a></li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="base">
+<h1>Base<a class="headerlink" href="#base" title="Permalink to this heading">#</a></h1>
+<section id="the-elegance-of-science-and-art-periodic-table-and-equal-temperament">
+<h2>The Elegance of Science and Art: Periodic Table and Equal Temperament<a class="headerlink" href="#the-elegance-of-science-and-art-periodic-table-and-equal-temperament" title="Permalink to this heading">#</a></h2>
+<p>Some ideas transform not only the domains in which they originate but ripple through the foundations of knowledge and human expression. In science, the periodic table reigns supreme, a chart that captures the essence of matter and its cosmic story. In art, equal temperament revolutionized Western music, enabling the harmonic and melodic expansiveness of symphonies and fugues. These twin pillars of understanding reflect humanity’s desire to impose order on chaos, achieving both practical mastery and profound beauty. Let us delve into their origins, their creators’ lives, and the costs and triumphs of their realization.</p>
+<hr class="docutils" />
+</section>
+<section id="the-periodic-table-dmitri-mendeleevs-vision">
+<h2><strong>The Periodic Table: Dmitri Mendeleev’s Vision</strong><a class="headerlink" href="#the-periodic-table-dmitri-mendeleevs-vision" title="Permalink to this heading">#</a></h2>
+<p>Dmitri Mendeleev, the “Father of the Periodic Table,” was born on February 8, 1834, in Verkhnie Aremzyani, a village near Tobolsk in Siberia. He was the youngest of 14 children in a family that faced severe hardships: his father went blind, and his mother had to run a glass factory to support the family. Mendeleev’s education began in Tobolsk at a local gymnasium, and after his father’s death and the family business’s failure, his mother took him to Saint Petersburg, determined to ensure he received an education. She died shortly after he enrolled at the Main Pedagogical Institute in 1850, leaving him orphaned at 16.</p>
+<p>Mendeleev’s brilliance in chemistry emerged during his studies, but his path was far from smooth. He battled tuberculosis, suffered professional setbacks, and often struggled socially due to his unconventional ideas and personality. His pivotal work, the periodic table, was published in 1869 in his book <em>Principles of Chemistry</em>. It was inspired by his effort to organize the known elements and predict the properties of undiscovered ones. Famously, he arranged cards of elements with their atomic weights and properties, much like a game of solitaire, and noticed recurring patterns. His confidence in the table was vindicated as his predictions for missing elements, like gallium and germanium, proved accurate.</p>
+<p><strong>Mendeleev’s Flaws and Legacy</strong><br />
+Socially, Mendeleev could be prickly. He had strained relationships with colleagues and endured scandals in his personal life. His second marriage, to a woman 30 years his junior, caused controversy and nearly cost him his academic position. Despite these imperfections, Mendeleev’s periodic table provided a framework that unified chemistry and eventually bridged physics, leading to quantum mechanics and our understanding of the universe’s elemental composition. His work, a product of empirical observation and visionary insight, continues to underpin scientific inquiry, from astrophysics to nanotechnology.</p>
+<hr class="docutils" />
+</section>
+<section id="equal-temperament-the-harmony-of-sacrifice">
+<h2><strong>Equal Temperament: The Harmony of Sacrifice</strong><a class="headerlink" href="#equal-temperament-the-harmony-of-sacrifice" title="Permalink to this heading">#</a></h2>
+<p>The history of equal temperament is more complex, involving a broader cast of characters and a more protracted evolution. The concept emerged as a solution to the imperfections of tuning systems based on the natural harmonic series. In pure intervals, pitches are determined by simple mathematical ratios (e.g., 3:2 for a perfect fifth), but stacking these intervals results in cumulative discrepancies known as the “Pythagorean comma.” Equal temperament solves this by dividing the octave into 12 equal parts, sacrificing pure intervals for a system in which all keys are equally usable.</p>
+<p><strong>Bach and the Well-Tempered Clavier</strong><br />
+Johann Sebastian Bach’s <em>Well-Tempered Clavier</em> (1722) is often credited with demonstrating the power of tempered tuning, but it was not strictly equal temperament. Bach employed “well temperament,” a system that allowed for the use of all keys but preserved some distinctions in their character. Equal temperament as we know it became standard only in the 19th century, facilitated by advances in instrument construction and the growing demands of composers like Beethoven, Chopin, and Liszt, who required seamless modulation across all keys.</p>
+<p><strong>Contributors to Equal Temperament</strong><br />
+The road to equal temperament involved figures from multiple traditions. Vincenzo Galilei, father of Galileo, wrote about the mathematical foundations of temperament in the late 16th century, while Chinese scholar Zhu Zaiyu independently described the system in 1584. The German theorist Andreas Werckmeister developed practical tuning methods in the late 17th century that laid the groundwork for Bach’s work. These contributions highlight the interconnectedness of cultures in shaping musical evolution.</p>
+<p><strong>Sacrifice and the Human Condition</strong><br />
+The adoption of equal temperament was not without its costs. By tempering the natural harmonic series, it sacrificed the purity of intervals for the sake of versatility. This sacrifice echoes the archetypal theme of giving up something precious for a greater good—a motif seen in human rituals, from ancient sacrifices to modern scientific paradigms. In music, this “tragedy of compromise” enabled the rise of Western harmony, allowing composers to build symphonic and contrapuntal structures of unparalleled complexity.</p>
+<hr class="docutils" />
+</section>
+<section id="other-cultures-and-microtonality">
+<h2><strong>Other Cultures and Microtonality</strong><a class="headerlink" href="#other-cultures-and-microtonality" title="Permalink to this heading">#</a></h2>
+<p>While equal temperament dominates Western music, other cultures embrace systems that retain the nuances of microtonality. Indian classical music, with its 22 shrutis per octave, explores the expressive potential of intervals finer than those in Western scales. Chinese, Arabic, and Persian traditions similarly incorporate microtonal systems that reflect their unique aesthetic values. These systems remind us that equal temperament, while revolutionary, is not the endpoint of musical evolution but one of many ways to organize sound.</p>
+<hr class="docutils" />
+</section>
+<section id="a-shared-paradigm-periodicity-and-temperament">
+<h2><strong>A Shared Paradigm: Periodicity and Temperament</strong><a class="headerlink" href="#a-shared-paradigm-periodicity-and-temperament" title="Permalink to this heading">#</a></h2>
+<p>The periodic table and equal temperament are both systems of compression. The periodic table compresses the vast diversity of matter into a coherent framework, while equal temperament compresses the infinite possibilities of pitch into a manageable system. Both reflect humanity’s need to navigate complexity by creating structures that balance fidelity and functionality. They are also acts of sacrifice—whether it is the periodic table’s reliance on approximations of atomic weights or equal temperament’s departure from natural intervals.</p>
+<p>In this shared paradigm, we see a Red Queen dynamic: progress demands continual adaptation, and mastery of one system invites challenges that push us toward the next horizon. The periodic table opened the door to quantum mechanics; equal temperament set the stage for musical revolutions like atonality and spectralism. Both remain cornerstones of their respective fields, reminders of our capacity to impose order and find beauty in the chaos of existence.</p>
+<div class="cell tag_hide-input docutils container">
+<details class="hide above-input">
+<summary aria-label="Toggle hidden content">
+<span class="collapsed">Show code cell source</span>
+<span class="expanded">Hide code cell source</span>
+</summary>
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">import</span> <span class="nn">networkx</span> <span class="k">as</span> <span class="nn">nx</span>
+
+<span class="c1"># Define the neural network structure</span>
+<span class="k">def</span> <span class="nf">define_layers</span><span class="p">():</span>
+    <span class="k">return</span> <span class="p">{</span>
+        <span class="c1"># Divine and narrative framework in the film</span>
+        <span class="s1">&#39;World&#39;</span><span class="p">:</span> <span class="p">[</span>
+            <span class="s1">&#39;Cosmos&#39;</span><span class="p">,</span>  <span class="c1"># Guido’s grand, universal sense of play and creativity</span>
+            <span class="s1">&#39;Earth&#39;</span><span class="p">,</span>  <span class="c1"># The tangible and oppressive reality of the Holocaust</span>
+            <span class="s1">&#39;Life&#39;</span><span class="p">,</span>  <span class="c1"># The stakes of survival and human connection</span>
+            <span class="s1">&#39;Il Sacrificio&#39;</span><span class="p">,</span>  <span class="c1"># Guido’s ultimate sacrifice</span>
+            <span class="s1">&#39;Mia Storia&#39;</span><span class="p">,</span>  <span class="c1"># Giosuè’s personal narrative, shaped by his father</span>
+            <span class="s1">&#39;Dono Per Me&#39;</span>  <span class="c1"># The &quot;gift&quot; of innocence and joy given by Guido</span>
+        <span class="p">],</span>
+        <span class="c1"># Perception and filtering of reality</span>
+        <span class="s1">&#39;Perception&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;Che Mio&#39;</span><span class="p">],</span>  <span class="c1"># How Giosuè interprets his father’s actions and words</span>
+        <span class="c1"># Agency and Guido’s defining traits</span>
+        <span class="s1">&#39;Agency&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;Cheerfulness&#39;</span><span class="p">,</span> <span class="s1">&#39;Optimism&#39;</span><span class="p">],</span>  <span class="c1"># Guido’s tools for shaping the narrative</span>
+        <span class="c1"># Generativity and legacy</span>
+        <span class="s1">&#39;Generativity&#39;</span><span class="p">:</span> <span class="p">[</span>
+            <span class="s1">&#39;Anarchy&#39;</span><span class="p">,</span>  <span class="c1"># Guido’s rebellion against oppressive reality</span>
+            <span class="s1">&#39;Oligarchy&#39;</span><span class="p">,</span>  <span class="c1"># The systemic constraints he navigates</span>
+            <span class="s1">&#39;Padre Fece&#39;</span>  <span class="c1"># The actions and sacrifices Guido made for his son</span>
+        <span class="p">],</span>
+        <span class="c1"># Physical realities and their interplay</span>
+        <span class="s1">&#39;Physicality&#39;</span><span class="p">:</span> <span class="p">[</span>
+            <span class="s1">&#39;Dynamic&#39;</span><span class="p">,</span>  <span class="c1"># Guido’s improvisational actions, like creating the “game”</span>
+            <span class="s1">&#39;Partisan&#39;</span><span class="p">,</span>  <span class="c1"># The direct oppression he faces</span>
+            <span class="s1">&#39;Common Wealth&#39;</span><span class="p">,</span>  <span class="c1"># Shared humanity and joy despite hardship</span>
+            <span class="s1">&#39;Non-Partisan&#39;</span><span class="p">,</span>  <span class="c1"># Universal themes transcending sides</span>
+            <span class="s1">&#39;Static&#39;</span>  <span class="c1"># The immovable, tragic finality of the Holocaust</span>
+        <span class="p">]</span>
+    <span class="p">}</span>
+
+<span class="c1"># Assign colors to nodes</span>
+<span class="k">def</span> <span class="nf">assign_colors</span><span class="p">(</span><span class="n">node</span><span class="p">,</span> <span class="n">layer</span><span class="p">):</span>
+    <span class="k">if</span> <span class="n">node</span> <span class="o">==</span> <span class="s1">&#39;Che Mio&#39;</span><span class="p">:</span>
+        <span class="k">return</span> <span class="s1">&#39;yellow&#39;</span>  <span class="c1"># Perception as the interpretive bridge</span>
+    <span class="k">if</span> <span class="n">layer</span> <span class="o">==</span> <span class="s1">&#39;World&#39;</span> <span class="ow">and</span> <span class="n">node</span> <span class="o">==</span> <span class="s1">&#39;Dono Per Me&#39;</span><span class="p">:</span>
+        <span class="k">return</span> <span class="s1">&#39;paleturquoise&#39;</span>  <span class="c1"># Optimism and the &quot;gift&quot;</span>
+    <span class="k">if</span> <span class="n">layer</span> <span class="o">==</span> <span class="s1">&#39;World&#39;</span> <span class="ow">and</span> <span class="n">node</span> <span class="o">==</span> <span class="s1">&#39;Mia Storia&#39;</span><span class="p">:</span>
+        <span class="k">return</span> <span class="s1">&#39;lightgreen&#39;</span>  <span class="c1"># Harmony and legacy</span>
+    <span class="k">if</span> <span class="n">layer</span> <span class="o">==</span> <span class="s1">&#39;World&#39;</span> <span class="ow">and</span> <span class="n">node</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">&#39;Cosmos&#39;</span><span class="p">,</span> <span class="s1">&#39;Earth&#39;</span><span class="p">]:</span>
+        <span class="k">return</span> <span class="s1">&#39;lightgray&#39;</span>  <span class="c1"># Context of divine and tangible</span>
+    <span class="k">elif</span> <span class="n">layer</span> <span class="o">==</span> <span class="s1">&#39;Agency&#39;</span> <span class="ow">and</span> <span class="n">node</span> <span class="o">==</span> <span class="s1">&#39;Optimism&#39;</span><span class="p">:</span>
+        <span class="k">return</span> <span class="s1">&#39;paleturquoise&#39;</span>  <span class="c1"># Guido’s defining hope</span>
+    <span class="k">elif</span> <span class="n">layer</span> <span class="o">==</span> <span class="s1">&#39;Generativity&#39;</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">node</span> <span class="o">==</span> <span class="s1">&#39;Padre Fece&#39;</span><span class="p">:</span>
+            <span class="k">return</span> <span class="s1">&#39;paleturquoise&#39;</span>  <span class="c1"># Guido’s ultimate acts of selflessness</span>
+        <span class="k">elif</span> <span class="n">node</span> <span class="o">==</span> <span class="s1">&#39;Oligarchy&#39;</span><span class="p">:</span>
+            <span class="k">return</span> <span class="s1">&#39;lightgreen&#39;</span>  <span class="c1"># Navigating systemic structures</span>
+        <span class="k">elif</span> <span class="n">node</span> <span class="o">==</span> <span class="s1">&#39;Anarchy&#39;</span><span class="p">:</span>
+            <span class="k">return</span> <span class="s1">&#39;lightsalmon&#39;</span>  <span class="c1"># Rebellion and creativity</span>
+    <span class="k">elif</span> <span class="n">layer</span> <span class="o">==</span> <span class="s1">&#39;Physicality&#39;</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">node</span> <span class="o">==</span> <span class="s1">&#39;Static&#39;</span><span class="p">:</span>
+            <span class="k">return</span> <span class="s1">&#39;paleturquoise&#39;</span>  <span class="c1"># The unchanging, tragic realities</span>
+        <span class="k">elif</span> <span class="n">node</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">&#39;Non-Partisan&#39;</span><span class="p">,</span> <span class="s1">&#39;Common Wealth&#39;</span><span class="p">,</span> <span class="s1">&#39;Partisan&#39;</span><span class="p">]:</span>
+            <span class="k">return</span> <span class="s1">&#39;lightgreen&#39;</span>  <span class="c1"># Shared humanity and resilience</span>
+        <span class="k">elif</span> <span class="n">node</span> <span class="o">==</span> <span class="s1">&#39;Dynamic&#39;</span><span class="p">:</span>
+            <span class="k">return</span> <span class="s1">&#39;lightsalmon&#39;</span>  <span class="c1"># Guido’s improvisation and vitality</span>
+    <span class="k">return</span> <span class="s1">&#39;lightsalmon&#39;</span>  <span class="c1"># Default color for tension or conflict</span>
+
+<span class="c1"># Calculate positions for nodes</span>
+<span class="k">def</span> <span class="nf">calculate_positions</span><span class="p">(</span><span class="n">layer</span><span class="p">,</span> <span class="n">center_x</span><span class="p">,</span> <span class="n">offset</span><span class="p">):</span>
+    <span class="n">layer_size</span> <span class="o">=</span> <span class="nb">len</span><span class="p">(</span><span class="n">layer</span><span class="p">)</span>
+    <span class="n">start_y</span> <span class="o">=</span> <span class="o">-</span><span class="p">(</span><span class="n">layer_size</span> <span class="o">-</span> <span class="mi">1</span><span class="p">)</span> <span class="o">/</span> <span class="mi">2</span>  <span class="c1"># Center the layer vertically</span>
+    <span class="k">return</span> <span class="p">[(</span><span class="n">center_x</span> <span class="o">+</span> <span class="n">offset</span><span class="p">,</span> <span class="n">start_y</span> <span class="o">+</span> <span class="n">i</span><span class="p">)</span> <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="n">layer_size</span><span class="p">)]</span>
+
+<span class="c1"># Create and visualize the neural network graph</span>
+<span class="k">def</span> <span class="nf">visualize_nn</span><span class="p">():</span>
+    <span class="n">layers</span> <span class="o">=</span> <span class="n">define_layers</span><span class="p">()</span>
+    <span class="n">G</span> <span class="o">=</span> <span class="n">nx</span><span class="o">.</span><span class="n">DiGraph</span><span class="p">()</span>
+    <span class="n">pos</span> <span class="o">=</span> <span class="p">{}</span>
+    <span class="n">node_colors</span> <span class="o">=</span> <span class="p">[]</span>
+    <span class="n">center_x</span> <span class="o">=</span> <span class="mi">0</span>  <span class="c1"># Align nodes horizontally</span>
+
+    <span class="c1"># Add nodes and assign positions</span>
+    <span class="k">for</span> <span class="n">i</span><span class="p">,</span> <span class="p">(</span><span class="n">layer_name</span><span class="p">,</span> <span class="n">nodes</span><span class="p">)</span> <span class="ow">in</span> <span class="nb">enumerate</span><span class="p">(</span><span class="n">layers</span><span class="o">.</span><span class="n">items</span><span class="p">()):</span>
+        <span class="n">y_positions</span> <span class="o">=</span> <span class="n">calculate_positions</span><span class="p">(</span><span class="n">nodes</span><span class="p">,</span> <span class="n">center_x</span><span class="p">,</span> <span class="n">offset</span><span class="o">=-</span><span class="nb">len</span><span class="p">(</span><span class="n">layers</span><span class="p">)</span> <span class="o">+</span> <span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">node</span><span class="p">,</span> <span class="n">position</span> <span class="ow">in</span> <span class="nb">zip</span><span class="p">(</span><span class="n">nodes</span><span class="p">,</span> <span class="n">y_positions</span><span class="p">):</span>
+            <span class="n">G</span><span class="o">.</span><span class="n">add_node</span><span class="p">(</span><span class="n">node</span><span class="p">,</span> <span class="n">layer</span><span class="o">=</span><span class="n">layer_name</span><span class="p">)</span>
+            <span class="n">pos</span><span class="p">[</span><span class="n">node</span><span class="p">]</span> <span class="o">=</span> <span class="n">position</span>
+            <span class="n">node_colors</span><span class="o">.</span><span class="n">append</span><span class="p">(</span><span class="n">assign_colors</span><span class="p">(</span><span class="n">node</span><span class="p">,</span> <span class="n">layer_name</span><span class="p">))</span>
+
+    <span class="c1"># Add edges (without weights)</span>
+    <span class="k">for</span> <span class="n">layer_pair</span> <span class="ow">in</span> <span class="p">[</span>
+        <span class="p">(</span><span class="s1">&#39;World&#39;</span><span class="p">,</span> <span class="s1">&#39;Perception&#39;</span><span class="p">),</span>  <span class="c1"># Giosuè interprets the &quot;World&quot; through &quot;Che Mio&quot;</span>
+        <span class="p">(</span><span class="s1">&#39;Perception&#39;</span><span class="p">,</span> <span class="s1">&#39;Agency&#39;</span><span class="p">),</span>  <span class="c1"># Guido’s cheerfulness shapes Giosuè’s perception</span>
+        <span class="p">(</span><span class="s1">&#39;Agency&#39;</span><span class="p">,</span> <span class="s1">&#39;Generativity&#39;</span><span class="p">),</span>  <span class="c1"># Guido’s optimism drives his generative actions</span>
+        <span class="p">(</span><span class="s1">&#39;Generativity&#39;</span><span class="p">,</span> <span class="s1">&#39;Physicality&#39;</span><span class="p">)</span>  <span class="c1"># His legacy plays out in the physical world</span>
+    <span class="p">]:</span>
+        <span class="n">source_layer</span><span class="p">,</span> <span class="n">target_layer</span> <span class="o">=</span> <span class="n">layer_pair</span>
+        <span class="k">for</span> <span class="n">source</span> <span class="ow">in</span> <span class="n">layers</span><span class="p">[</span><span class="n">source_layer</span><span class="p">]:</span>
+            <span class="k">for</span> <span class="n">target</span> <span class="ow">in</span> <span class="n">layers</span><span class="p">[</span><span class="n">target_layer</span><span class="p">]:</span>
+                <span class="n">G</span><span class="o">.</span><span class="n">add_edge</span><span class="p">(</span><span class="n">source</span><span class="p">,</span> <span class="n">target</span><span class="p">)</span>
+
+    <span class="c1"># Draw the graph</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">14</span><span class="p">,</span> <span class="mi">10</span><span class="p">))</span>
+    <span class="n">nx</span><span class="o">.</span><span class="n">draw</span><span class="p">(</span>
+        <span class="n">G</span><span class="p">,</span> <span class="n">pos</span><span class="p">,</span> <span class="n">with_labels</span><span class="o">=</span><span class="kc">True</span><span class="p">,</span> <span class="n">node_color</span><span class="o">=</span><span class="n">node_colors</span><span class="p">,</span> <span class="n">edge_color</span><span class="o">=</span><span class="s1">&#39;gray&#39;</span><span class="p">,</span>
+        <span class="n">node_size</span><span class="o">=</span><span class="mi">3000</span><span class="p">,</span> <span class="n">font_size</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span> <span class="n">connectionstyle</span><span class="o">=</span><span class="s2">&quot;arc3,rad=0.1&quot;</span>
+    <span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">title</span><span class="p">(</span><span class="s2">&quot;Questa è la mia storia: Vita è Bella&quot;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">15</span><span class="p">)</span>
+    <span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+
+<span class="c1"># Run the visualization</span>
+<span class="n">visualize_nn</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+</details>
+<div class="cell_output docutils container">
+<img alt="../../_images/6e9a6e47eafe4cc0bd8602f59d5c9e4c6eb989e5a17b71fbd88f7fb9eb54b416.png" src="../../_images/6e9a6e47eafe4cc0bd8602f59d5c9e4c6eb989e5a17b71fbd88f7fb9eb54b416.png" />
+</div>
+</div>
+</section>
+</section>
+<section class="tex2jax_ignore mathjax_ignore" id="id1">
+<h1><a class="headerlink" href="#id1" title="Permalink to this heading">#</a></h1>
+<figure class="align-default" id="id2">
+<a class="reference internal image-reference" href="act3/figures/blanche.*"><img alt="act3/figures/blanche.*" src="act3/figures/blanche.*" style="width: 1px; height: 1px;" /></a>
+<figcaption>
+<p><span class="caption-number">Fig. 16 </span><span class="caption-text"><em>From a Pianist View</em>. Left hand voices the mode and defines harmony. Right hand voice leads freely extend and alter modal landscapes. In R&amp;B that typically manifests as 9ths, 11ths, 13ths. Passing chords and leading notes are often chromatic in the genre. Music is evocative because it transmits information that traverses through a primeval pattern-recognizing architecture that demands a classification of what you confront as the sort for feeding &amp; breeding or fight &amp; flight. It’s thus a very high-risk, high-error business if successful. We may engage in pattern recognition in literature too: concluding by inspection but erroneously that his silent companion was engaged in mental composition he reflected on the pleasures derived from literature of instruction rather than of amusement as he himself had applied to the works of William Shakespeare more than once for the solution of difficult problems in imaginary or real life. Source: <a class="reference external" href="https://www.gutenberg.org/cache/epub/4300/pg4300-images.html#chap17">Ulysses</a></span><a class="headerlink" href="#id2" title="Permalink to this image">#</a></p>
+</figcaption>
+</figure>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./act3/part2"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer d-print-none">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="../act2.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Archetypal</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="part2_2.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Risk</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#">Base</a><ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-elegance-of-science-and-art-periodic-table-and-equal-temperament">The Elegance of Science and Art: Periodic Table and Equal Temperament</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#the-periodic-table-dmitri-mendeleevs-vision"><strong>The Periodic Table: Dmitri Mendeleev’s Vision</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#equal-temperament-the-harmony-of-sacrifice"><strong>Equal Temperament: The Harmony of Sacrifice</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#other-cultures-and-microtonality"><strong>Other Cultures and Microtonality</strong></a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#a-shared-paradigm-periodicity-and-temperament"><strong>A Shared Paradigm: Periodicity and Temperament</strong></a></li>
+</ul>
+</li>
+<li class="toc-h1 nav-item toc-entry"><a class="reference internal nav-link" href="#id1"></a></li>
+</ul>
+
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+
+  </div>
+  
+  <div class="footer-item">
+    
+  </div>
+  
+  <div class="footer-item">
+    
+<div class="extra_footer">
+  Copyright © 2025 Zeus
+
+</div>
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/bootstrap.js?digest=dfe6caa3a7d634c4db9b"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=dfe6caa3a7d634c4db9b"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
