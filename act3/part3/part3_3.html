@@ -692,9 +692,9 @@ document.write(`
             <span class="s1">&#39;Clever Strategy&#39;</span>  <span class="c1"># The &quot;gift&quot; of innocence and joy given by Guido 👩🏾🧠</span>
         <span class="p">],</span>
         <span class="c1"># Perception and filtering of reality</span>
-        <span class="s1">&#39;Perception&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;Owl&#39;</span><span class="p">],</span>  <span class="c1"># 🦉 How Giosuè interprets his father’s actions and words</span>
+        <span class="s1">&#39;Perception&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;Owl: Surveillance&#39;</span><span class="p">],</span>  <span class="c1"># 🦉 How Giosuè interprets his father’s actions and words</span>
         <span class="c1"># Agency and Guido’s defining traits</span>
-        <span class="s1">&#39;Agency&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;Threats&#39;</span><span class="p">,</span> <span class="s1">&#39;Realm&#39;</span><span class="p">],</span>  <span class="c1"># Guido’s tools for shaping the narrative</span>
+        <span class="s1">&#39;Agency&#39;</span><span class="p">:</span> <span class="p">[</span><span class="s1">&#39;Threats: Neighbors&#39;</span><span class="p">,</span> <span class="s1">&#39;Realm: City-State&#39;</span><span class="p">],</span>  <span class="c1"># Guido’s tools for shaping the narrative</span>
         <span class="c1"># Generativity and legacy</span>
         <span class="s1">&#39;Generativity&#39;</span><span class="p">:</span> <span class="p">[</span>
             <span class="s1">&#39;Acropolis&#39;</span><span class="p">,</span>  <span class="c1"># Guido’s rebellion against oppressive reality</span>
@@ -703,25 +703,25 @@ document.write(`
         <span class="p">],</span>
         <span class="c1"># Physical realities and their interplay</span>
         <span class="s1">&#39;Physicality&#39;</span><span class="p">:</span> <span class="p">[</span>
-            <span class="s1">&#39;Sword&#39;</span><span class="p">,</span>  <span class="c1"># Guido’s improvisational actions, like creating the “game” 🗡️ </span>
-            <span class="s1">&#39;Serpent&#39;</span><span class="p">,</span>  <span class="c1"># The direct oppression he faces 🐍 </span>
-            <span class="s1">&#39;Horse&#39;</span><span class="p">,</span>  <span class="c1"># Shared humanity and joy despite hardship 🐎 </span>
-            <span class="s1">&#39;Helmet&#39;</span><span class="p">,</span>  <span class="c1"># Universal themes transcending sides 🪖 </span>
-            <span class="s1">&#39;Shield&#39;</span>  <span class="c1"># The immovable, tragic finality of the Holocaust 🛡️</span>
+            <span class="s1">&#39;Sword: Offense&#39;</span><span class="p">,</span>  <span class="c1"># Guido’s improvisational actions, like creating the “game” 🗡️ </span>
+            <span class="s1">&#39;Serpent: Lethality&#39;</span><span class="p">,</span>  <span class="c1"># The direct oppression he faces 🐍 </span>
+            <span class="s1">&#39;Horse: Retreat&#39;</span><span class="p">,</span>  <span class="c1"># Shared humanity and joy despite hardship 🐎 </span>
+            <span class="s1">&#39;Helmet: Immunity&#39;</span><span class="p">,</span>  <span class="c1"># Universal themes transcending sides 🪖 </span>
+            <span class="s1">&#39;Shield: Defense&#39;</span>  <span class="c1"># The immovable, tragic finality of the Holocaust 🛡️</span>
         <span class="p">]</span>
     <span class="p">}</span>
 
 <span class="c1"># Assign colors to nodes</span>
 <span class="k">def</span> <span class="nf">assign_colors</span><span class="p">(</span><span class="n">node</span><span class="p">,</span> <span class="n">layer</span><span class="p">):</span>
-    <span class="k">if</span> <span class="n">node</span> <span class="o">==</span> <span class="s1">&#39;Owl&#39;</span><span class="p">:</span>
+    <span class="k">if</span> <span class="n">node</span> <span class="o">==</span> <span class="s1">&#39;Owl: Surveillance&#39;</span><span class="p">:</span>
         <span class="k">return</span> <span class="s1">&#39;yellow&#39;</span>  <span class="c1"># Perception as the interpretive bridge</span>
     <span class="k">if</span> <span class="n">layer</span> <span class="o">==</span> <span class="s1">&#39;World&#39;</span> <span class="ow">and</span> <span class="n">node</span> <span class="o">==</span> <span class="s1">&#39;Clever Strategy&#39;</span><span class="p">:</span>
         <span class="k">return</span> <span class="s1">&#39;paleturquoise&#39;</span>  <span class="c1"># Optimism and the &quot;gift&quot;</span>
     <span class="k">if</span> <span class="n">layer</span> <span class="o">==</span> <span class="s1">&#39;World&#39;</span> <span class="ow">and</span> <span class="n">node</span> <span class="o">==</span> <span class="s1">&#39;Brute Strength&#39;</span><span class="p">:</span>
         <span class="k">return</span> <span class="s1">&#39;lightgreen&#39;</span>  <span class="c1"># Harmony and legacy</span>
-    <span class="k">if</span> <span class="n">layer</span> <span class="o">==</span> <span class="s1">&#39;World&#39;</span> <span class="ow">and</span> <span class="n">node</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">&#39;Cosmos&#39;</span><span class="p">,</span> <span class="s1">&#39;Earth&#39;</span><span class="p">]:</span>
+    <span class="k">if</span> <span class="n">layer</span> <span class="o">==</span> <span class="s1">&#39;World&#39;</span> <span class="ow">and</span> <span class="n">node</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">&#39;Cosmos, Theogony&#39;</span><span class="p">,</span> <span class="s1">&#39;Earth, Greece&#39;</span><span class="p">]:</span>
         <span class="k">return</span> <span class="s1">&#39;lightgray&#39;</span>  <span class="c1"># Context of divine and tangible</span>
-    <span class="k">elif</span> <span class="n">layer</span> <span class="o">==</span> <span class="s1">&#39;Agency&#39;</span> <span class="ow">and</span> <span class="n">node</span> <span class="o">==</span> <span class="s1">&#39;Realm&#39;</span><span class="p">:</span>
+    <span class="k">elif</span> <span class="n">layer</span> <span class="o">==</span> <span class="s1">&#39;Agency&#39;</span> <span class="ow">and</span> <span class="n">node</span> <span class="o">==</span> <span class="s1">&#39;Realm: City-State&#39;</span><span class="p">:</span>
         <span class="k">return</span> <span class="s1">&#39;paleturquoise&#39;</span>  <span class="c1"># Guido’s defining hope</span>
     <span class="k">elif</span> <span class="n">layer</span> <span class="o">==</span> <span class="s1">&#39;Generativity&#39;</span><span class="p">:</span>
         <span class="k">if</span> <span class="n">node</span> <span class="o">==</span> <span class="s1">&#39;Zeus&#39;</span><span class="p">:</span>
@@ -731,11 +731,11 @@ document.write(`
         <span class="k">elif</span> <span class="n">node</span> <span class="o">==</span> <span class="s1">&#39;Acropolis&#39;</span><span class="p">:</span>
             <span class="k">return</span> <span class="s1">&#39;lightsalmon&#39;</span>  <span class="c1"># Rebellion and creativity</span>
     <span class="k">elif</span> <span class="n">layer</span> <span class="o">==</span> <span class="s1">&#39;Physicality&#39;</span><span class="p">:</span>
-        <span class="k">if</span> <span class="n">node</span> <span class="o">==</span> <span class="s1">&#39;Shield&#39;</span><span class="p">:</span>
+        <span class="k">if</span> <span class="n">node</span> <span class="o">==</span> <span class="s1">&#39;Shield: Defense&#39;</span><span class="p">:</span>
             <span class="k">return</span> <span class="s1">&#39;paleturquoise&#39;</span>  <span class="c1"># The unchanging, tragic realities</span>
-        <span class="k">elif</span> <span class="n">node</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">&#39;Helmet&#39;</span><span class="p">,</span> <span class="s1">&#39;Horse&#39;</span><span class="p">,</span> <span class="s1">&#39;Serpent&#39;</span><span class="p">]:</span>
+        <span class="k">elif</span> <span class="n">node</span> <span class="ow">in</span> <span class="p">[</span><span class="s1">&#39;Helmet: Immunity&#39;</span><span class="p">,</span> <span class="s1">&#39;Horse: Retreat&#39;</span><span class="p">,</span> <span class="s1">&#39;Serpent: Lethality&#39;</span><span class="p">]:</span>
             <span class="k">return</span> <span class="s1">&#39;lightgreen&#39;</span>  <span class="c1"># Shared humanity and resilience</span>
-        <span class="k">elif</span> <span class="n">node</span> <span class="o">==</span> <span class="s1">&#39;Sword&#39;</span><span class="p">:</span>
+        <span class="k">elif</span> <span class="n">node</span> <span class="o">==</span> <span class="s1">&#39;Sword: Offense&#39;</span><span class="p">:</span>
             <span class="k">return</span> <span class="s1">&#39;lightsalmon&#39;</span>  <span class="c1"># Guido’s improvisation and vitality</span>
     <span class="k">return</span> <span class="s1">&#39;lightsalmon&#39;</span>  <span class="c1"># Default color for tension or conflict</span>
 
@@ -789,7 +789,7 @@ document.write(`
 </div>
 </details>
 <div class="cell_output docutils container">
-<img alt="../../_images/959a5912b61b76fde48aa0b240d44dd5da37802f7fb929a4a62169117d1837d9.png" src="../../_images/959a5912b61b76fde48aa0b240d44dd5da37802f7fb929a4a62169117d1837d9.png" />
+<img alt="../../_images/b7daf23ba2e3a78652558b5a9711abe357a6398471cf84dc43c8b98e6ec61b63.png" src="../../_images/b7daf23ba2e3a78652558b5a9711abe357a6398471cf84dc43c8b98e6ec61b63.png" />
 </div>
 </div>
 <figure class="align-default" id="id3">
